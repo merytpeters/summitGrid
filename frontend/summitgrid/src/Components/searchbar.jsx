@@ -63,7 +63,7 @@ function Searchbar({ onSearch }) {
       borderRadius: "25px",
       padding: "8px 12px",
       width: "100%",
-      maxWidth: "600px",
+      maxWidth: "750px",
       margin: "0 auto",
       background: "#fff"
     }}>
@@ -88,7 +88,7 @@ function Searchbar({ onSearch }) {
           background: "none",
           border: "none",
           cursor: "pointer",
-          padding: "6px"
+          padding: "6px",
         }}>
           <img src="/img/filterIcon.png" alt="Filter" style={{ height: "20px" }} />
           <img src="/img/arrowdownicon.png" alt="Dropdown" style={{ height: "12px" }} />
