@@ -1,0 +1,42 @@
+.page-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .logo-image {
+    position: absolute;
+    top: 0%;
+    left: 3%;
+    z-index: 10;
+  }
+  
+  .header {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    z-index: 10;
+  }
+  
+  .searchbar {
+    margin-top: 60px;
+    width: 50%;
+    max-width: 500px;
+    left: 20%;
+    position: absolute;
+    z-index: 999;
+  }
+  
+  .hero {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  @media (max-width: 950px) {
+    .page-container {
+      width: 100vw;
+    }
+  }
