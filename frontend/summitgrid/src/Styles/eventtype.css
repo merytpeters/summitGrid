@@ -1,0 +1,48 @@
+.event-type-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 15%;
+    width: 75vw;
+}
+
+.event-type-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.event-type-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .event-type-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 25px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;  
+      }
+
+    .event-type-item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .event-type-item a {
+        font-size: 1rem;
+    }
+}

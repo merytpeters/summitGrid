@@ -1,0 +1,83 @@
+.eventcard-container {
+    background: transparent;
+    position: relative;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 10%;
+}
+
+.eventcard {
+    position: relative;
+    background: linear-gradient(to right, #004AAD, #E385EC);
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: fit-content;
+}
+
+.eventcard-image {
+    margin: 2% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 100px;
+    border-radius: 15px;
+    background-color: white;
+    
+}
+
+.eventcard-text h4 {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.2rem;
+    margin: auto;
+}
+
+.eventcard-text {
+    gap: 15px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.get-ticket-button {
+    background: linear-gradient(to right, #004AAD, #E385EC);
+    border-radius: 15px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin: auto;
+    width: 50%;
+    cursor: pointer;
+}
+.get-ticket-button:hover {
+    background: linear-gradient(to right, #E385EC, #004AAD);
+    transition: 0.3s;
+}
+
+@media (max-width: 869px) {
+    .eventcard-container {
+        width: 95vw;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .eventcard {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .get-ticket-button {
+        width: 70%;
+    }
+}
